@@ -1,4 +1,7 @@
 const pkg = require('./package')
+const url = 'https://by.black/'
+const title = 'Black Inc.'
+const color = '#0a0a0a'
 
 module.exports = {
   mode: 'spa',
@@ -7,33 +10,35 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Black Inc.',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
-      { property: 'og:url', content: 'https://by.black/' },
-      { property: 'og:title', content: 'Black Inc.' },
-      {
-        property: 'og:description',
-        content: pkg.description
-      },
-      {
-        property: 'og:image',
-        content: 'https://by.black/madebyblack.png'
-      },
-      {
-        property: 'og:type',
-        content: 'website'
-      }
-    ],
     link: [
-      { rel: 'canonical', href: 'https://by.black/' },
+      { rel: 'canonical', href: url },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700'
       }
     ]
+  },
+  meta: {
+    name: title,
+    author: pkg.author,
+    description: pkg.description,
+    theme_color: color,
+    lang: 'ja',
+    ogType: 'website',
+    ogSiteName: title,
+    ogTitle: title,
+    ogDescription: pkg.description,
+    ogHost: url,
+    ogImage: 'madebyblack.png',
+    ogUrl: url
+  },
+  manifest: {
+    background_color: color,
+    description: pkg.description,
+    lang: 'ja',
+    name: title,
+    short_name: title,
+    theme_color: color
   },
 
   /*
