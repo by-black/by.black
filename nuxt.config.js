@@ -11,9 +11,29 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { property: 'og:url', content: 'https://by.black/' },
+      { property: 'og:title', content: 'Black Inc.' },
+      {
+        property: 'og:description',
+        content: pkg.description
+      },
+      {
+        property: 'og:image',
+        content: 'https://by.black/madebyblack.png'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      }
     ],
-    link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/ybd1taf.css' }]
+    link: [
+      { rel: 'canonical', href: 'https://by.black/' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700'
+      }
+    ]
   },
 
   /*

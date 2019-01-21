@@ -1,72 +1,118 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        by.black
-      </h1>
-      <h2 class="subtitle">
-        Black Inc.
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <section class="hero is-black is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+            <img src="~/assets/hero.svg" alt="Made by Black">
+          </h1>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>
+          <p class="title is-2">
+            Overview
+          </p>
+          <p class="subtitle is-6">
+            会社概要
+          </p>
+        </h2>
+        <table class="table is-fullwidth">
+          <tbody>
+            <tr>
+              <th />
+              <td />
+            </tr>
+            <tr>
+              <th>和文商号</th>
+              <td>株式会社ブラック</td>
+            </tr>
+            <tr>
+              <th>英文商号</th>
+              <td>Black Inc.</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2018/11/22</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>100万円（資本準備金含む）</td>
+            </tr>
+            <tr>
+              <th>代表取締役</th>
+              <td>小川楓太</td>
+            </tr>
+            <tr>
+              <th>本店</th>
+              <td>〒108-0071 東京都港区白金台5-11-8-205</td>
+            </tr>
+            <tr>
+              <th />
+              <td />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>
+          <p class="title is-2">
+            Contact
+          </p>
+          <p class="subtitle is-6">
+            お問い合わせ
+          </p>
+        </h2>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <a href="mailto:info@by.black" class="box_">
+              <p class="title has-text-centered">
+                info@by.black
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section">
+      <div class="container">
+        <p>
+          <small>Copyright © 2019 Black Inc. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+  </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+h2 {
+  margin-bottom: 1.25rem;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+.table {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.box_ {
+  border: 0.3125rem solid #0a0a0a;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  padding: 1.25rem;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  p {
+    color: #0a0a0a;
+  }
 
-.links {
-  padding-top: 15px;
+  &:hover {
+    background-color: #0a0a0a;
+
+    p {
+      color: #ffffff;
+    }
+  }
 }
 </style>
