@@ -6,7 +6,7 @@
         by.black
       </h1>
       <h2 class="subtitle">
-        My kickass Nuxt.js project
+        Black Inc.
       </h2>
       <div class="links">
         <a

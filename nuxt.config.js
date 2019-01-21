@@ -24,12 +24,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: [],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/element-ui'],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
@@ -37,6 +37,8 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
+    '@nuxtjs/bulma',
     '@nuxtjs/pwa'
   ],
   /*
@@ -50,6 +52,13 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
+      }
+    },
     /*
     ** You can extend webpack config here
     */

@@ -1,6 +1,6 @@
 # by.black
 
-> My kickass Nuxt.js project
+> Black Inc.
 
 ## Build Setup
 
