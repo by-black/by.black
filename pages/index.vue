@@ -19,7 +19,7 @@
             会社概要
           </p>
         </h2>
-        <table class="table is-fullwidth">
+        <table class="table is-fullwidth is-size-5 has-text-weight-bold">
           <tbody>
             <tr>
               <th />
@@ -68,9 +68,9 @@
           </p>
         </h2>
         <div class="columns">
-          <div class="column is-half-desktop is-offset-one-quarter">
+          <div class="column is-half-desktop is-offset-one-quarter-desktop">
             <a href="mailto:info@by.black" class="box_">
-              <p class="title has-text-centered">
+              <p class="title is-4 has-text-centered">
                 info@by.black
               </p>
             </a>
@@ -93,12 +93,8 @@ h2 {
   margin-bottom: 1.25rem;
 }
 
-.table {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
 .box_ {
+  background-color: #ffffff;
   border: 0.3125rem solid #0a0a0a;
   display: block;
   padding: 1.25rem;
