@@ -14,7 +14,8 @@ module.exports = {
       { rel: 'canonical', href: url },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap'
+        href:
+          'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap'
       }
     ]
   },
@@ -30,7 +31,8 @@ module.exports = {
     ogDescription: pkg.description,
     ogHost: url,
     ogImage: 'black.png',
-    ogUrl: url
+    ogUrl: url,
+    twitterCard: 'summary_large_image'
   },
   manifest: {
     background_color: color,

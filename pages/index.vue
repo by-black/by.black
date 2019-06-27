@@ -108,8 +108,7 @@
 </template>
 
 <style lang="scss" scoped>
-$black: #000000;
-$white: #ffffff;
+@import '~/assets/variables.scss';
 
 h2 {
   margin-bottom: 1.25rem;
@@ -125,8 +124,8 @@ h2 {
 
 .hero {
   .title {
+    font-size: 28vw;
     text-align: center;
-    font-size: 25vw;
   }
 }
 
