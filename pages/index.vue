@@ -2,9 +2,9 @@
   <div>
     <section class="hero is-black is-fullheight">
       <div class="hero-body">
-        <div class="container">
+        <div class="container is-fluid">
           <h1 class="title is-1">
-            <img src="~/assets/hero.svg" alt="Made by Black">
+            <span>Black</span>
           </h1>
         </div>
       </div>
@@ -108,25 +108,43 @@
 </template>
 
 <style lang="scss" scoped>
+$black: #000000;
+$white: #ffffff;
+
 h2 {
   margin-bottom: 1.25rem;
 }
 
+.title {
+  font-family: 'Helvetica Now Display W01 Black';
+}
+
+.is-black {
+  background-color: $black;
+}
+
+.hero {
+  .title {
+    text-align: center;
+    font-size: 25vw;
+  }
+}
+
 .box_ {
-  background-color: #ffffff;
-  border: 0.3125rem solid #0a0a0a;
+  background-color: $white;
+  border: 0.3125rem solid $black;
   display: block;
   padding: 1.25rem;
 
   p {
-    color: #0a0a0a;
+    color: $black;
   }
 
   &:hover {
-    background-color: #0a0a0a;
+    background-color: $black;
 
     p {
-      color: #ffffff;
+      color: $white;
     }
   }
 }

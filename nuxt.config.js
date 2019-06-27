@@ -1,7 +1,7 @@
 const pkg = require('./package')
 const url = 'https://by.black/'
 const title = 'Black Inc.'
-const color = '#0a0a0a'
+const color = '#000000'
 
 module.exports = {
   mode: 'spa',
@@ -14,7 +14,7 @@ module.exports = {
       { rel: 'canonical', href: url },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700'
+        href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap'
       }
     ]
   },
@@ -29,7 +29,7 @@ module.exports = {
     ogTitle: title,
     ogDescription: pkg.description,
     ogHost: url,
-    ogImage: 'madebyblack.png',
+    ogImage: 'black.png',
     ogUrl: url
   },
   manifest: {
@@ -49,7 +49,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [{ src: '~assets/fonts.com/demo-async.css' }],
 
   /*
   ** Plugins to load before mounting the App
