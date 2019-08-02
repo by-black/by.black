@@ -56,7 +56,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [{ src: '~plugins/ga.js', ssr: false }],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
@@ -66,6 +66,7 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/pwa'
   ],
   /*
@@ -73,6 +74,9 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  googleAnalytics: {
+    id: 'UA-132845166-1'
   },
 
   /*
