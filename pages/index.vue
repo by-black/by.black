@@ -12,18 +12,12 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">
-            Products
-          </p>
-          <p class="subtitle is-6">
-            サービス
-          </p>
+          <p class="title is-2">Products</p>
+          <p class="subtitle is-6">サービス</p>
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
-            <p class="title is-4 has-text-centered">
-              Coming Soon
-            </p>
+            <p class="title is-4 has-text-centered">Coming Soon</p>
           </div>
         </div>
       </div>
@@ -31,12 +25,8 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">
-            Overview
-          </p>
-          <p class="subtitle is-6">
-            会社概要
-          </p>
+          <p class="title is-2">Overview</p>
+          <p class="subtitle is-6">会社概要</p>
         </h2>
         <table class="table is-fullwidth is-size-5 has-text-weight-bold">
           <tbody>
@@ -66,7 +56,7 @@
             </tr>
             <tr>
               <th>所在地</th>
-              <td>〒108-0071 東京都港区白金台5-11-8-205</td>
+              <td>〒150-0031 東京都渋谷区桜丘町31-14 SLACK SHIBUYA 1001</td>
             </tr>
             <tr>
               <th />
@@ -79,12 +69,8 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">
-            Contact
-          </p>
-          <p class="subtitle is-6">
-            お問い合わせ
-          </p>
+          <p class="title is-2">Contact</p>
+          <p class="subtitle is-6">お問い合わせ</p>
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
