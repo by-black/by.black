@@ -12,12 +12,18 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">Products</p>
-          <p class="subtitle is-6">サービス</p>
+          <p class="title is-2">
+            Products
+          </p>
+          <p class="subtitle is-6">
+            サービス
+          </p>
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
-            <p class="title is-4 has-text-centered">Coming Soon</p>
+            <a href="https://oo.parts/" target="_blank" rel="noopener noreferrer">
+              <img src="~/assets/ooparts.png" alt="OOParts" style="display: block;">
+            </a>
           </div>
         </div>
       </div>
@@ -25,8 +31,12 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">Overview</p>
-          <p class="subtitle is-6">会社概要</p>
+          <p class="title is-2">
+            Overview
+          </p>
+          <p class="subtitle is-6">
+            会社概要
+          </p>
         </h2>
         <table class="table is-fullwidth is-size-5 has-text-weight-bold">
           <tbody>
@@ -69,8 +79,12 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">Contact</p>
-          <p class="subtitle is-6">お問い合わせ</p>
+          <p class="title is-2">
+            Contact
+          </p>
+          <p class="subtitle is-6">
+            お問い合わせ
+          </p>
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
