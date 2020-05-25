@@ -1,14 +1,13 @@
-const pkg = require('./package')
 const url = 'https://by.black/'
 const title = 'Black Inc.'
+const description = 'Black Inc.'
 const color = '#000000'
 
-module.exports = {
+export default {
   mode: 'spa',
-
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     link: [
       { rel: 'canonical', href: url },
@@ -19,69 +18,77 @@ module.exports = {
       }
     ]
   },
-  meta: {
-    name: title,
-    author: pkg.author,
-    description: pkg.description,
-    theme_color: color,
-    lang: 'ja',
-    ogType: 'website',
-    ogSiteName: title,
-    ogTitle: title,
-    ogDescription: pkg.description,
-    ogHost: url,
-    ogImage: 'black.png',
-    ogUrl: url,
-    twitterCard: 'summary_large_image'
-  },
-  manifest: {
-    background_color: color,
-    description: pkg.description,
-    lang: 'ja',
-    name: title,
-    short_name: title,
-    theme_color: color
-  },
-
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
-
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [{ src: '~assets/fonts.com/demo-async.css' }],
-
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [],
-
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
-    '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa'
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [
+    '@nuxt/typescript-build',
+    // Doc: https://github.com/nuxt-community/stylelint-module
+    '@nuxtjs/stylelint-module'
   ],
   /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-  googleAnalytics: {
-    id: 'UA-132845166-1'
-  },
-
+   ** Nuxt.js modules
+   */
+  modules: [
+    // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
+    '@nuxtjs/bulma',
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/dotenv',
+    '@nuxtjs/google-analytics'
+  ],
   /*
-  ** Build configuration
-  */
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
+  pwa: {
+    workbox: {},
+    meta: {
+      name: title,
+      author: process.env.npm_package_author_name,
+      description,
+      theme_color: color,
+      lang: 'ja',
+      ogType: 'website',
+      ogSiteName: title,
+      ogTitle: title,
+      ogDescription: description,
+      ogHost: url,
+      ogImage: 'black.png',
+      ogUrl: url,
+      twitterCard: 'summary_large_image',
+      twitterSite: '',
+      twitterCreator: ''
+    },
+    icon: {},
+    manifest: {
+      background_color: color,
+      description,
+      lang: 'ja',
+      name: title,
+      short_name: title,
+      theme_color: color
+    }
+  },
+  googleAnalytics: { id: 'UA-132845166-1' },
+  /*
+   ** Build configuration
+   */
   build: {
     postcss: {
       preset: {
@@ -91,18 +98,9 @@ module.exports = {
       }
     },
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
+     ** You can extend webpack config here
+     */
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    extend(config, ctx) {}
   }
 }

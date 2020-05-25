@@ -21,8 +21,16 @@
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
-            <a href="https://oo.parts/" target="_blank" rel="noopener noreferrer">
-              <img src="~/assets/ooparts.png" alt="OOParts" style="display: block;">
+            <a
+              href="https://oo.parts/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/ooparts.png"
+                alt="OOParts"
+                style="display: block;"
+              />
             </a>
           </div>
         </div>
