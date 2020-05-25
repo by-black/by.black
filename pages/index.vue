@@ -12,12 +12,8 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">
-            Products
-          </p>
-          <p class="subtitle is-6">
-            サービス
-          </p>
+          <p class="title is-2">Products</p>
+          <p class="subtitle is-6">サービス</p>
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
@@ -39,12 +35,8 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">
-            Overview
-          </p>
-          <p class="subtitle is-6">
-            会社概要
-          </p>
+          <p class="title is-2">Overview</p>
+          <p class="subtitle is-6">会社概要</p>
         </h2>
         <table class="table is-fullwidth is-size-5 has-text-weight-bold">
           <tbody>
@@ -91,12 +83,8 @@
     <section class="section">
       <div class="container">
         <h2>
-          <p class="title is-2">
-            Contact
-          </p>
-          <p class="subtitle is-6">
-            お問い合わせ
-          </p>
+          <p class="title is-2">Contact</p>
+          <p class="subtitle is-6">お問い合わせ</p>
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
@@ -125,7 +113,7 @@ h2 {
 }
 
 .title {
-  font-family: 'Helvetica Now Display W01 Black';
+  font-family: 'Helvetica Now Display W01 Black', sans-serif;
 }
 
 .is-black {
@@ -133,9 +121,15 @@ h2 {
 }
 
 .hero {
+  .is-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .title {
     font-size: 28vw;
     text-align: center;
+    cursor: default;
   }
 }
 
