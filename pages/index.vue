@@ -110,7 +110,7 @@
     <footer class="section">
       <div class="container">
         <p>
-          <small>Copyright © 2019 Black Inc. All rights reserved.</small>
+          <small>Copyright © 2020 Black Inc. All rights reserved.</small>
         </p>
       </div>
     </footer>
