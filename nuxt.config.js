@@ -14,7 +14,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap'
+          'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap'
       }
     ]
   },
