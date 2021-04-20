@@ -12,6 +12,36 @@
     <section class="section">
       <div class="container">
         <h2>
+          <p class="title is-2">News</p>
+          <p class="subtitle is-6">ニュース</p>
+        </h2>
+        <table class="table is-striped is-fullwidth has-text-weight-bold">
+          <thead>
+            <tr>
+              <th></th>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="news in newsList" :key="news.url">
+              <th>{{ news.date }}</th>
+              <td>
+                <a :href="news.url" target="_blank">{{ news.title }}</a>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>
           <p class="title is-2">Products</p>
           <p class="subtitle is-6">サービス</p>
         </h2>
@@ -39,11 +69,13 @@
           <p class="subtitle is-6">会社概要</p>
         </h2>
         <table class="table is-fullwidth is-size-5 has-text-weight-bold">
-          <tbody>
+          <thead>
             <tr>
-              <th />
-              <td />
+              <th></th>
+              <td></td>
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <th>和文商号</th>
               <td>株式会社ブラック</td>
@@ -68,11 +100,13 @@
               <th>所在地</th>
               <td>〒108-0071 東京都港区白金台5-11-8-205</td>
             </tr>
-            <tr>
-              <th />
-              <td />
-            </tr>
           </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <td></td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </section>
@@ -100,6 +134,18 @@
     </footer>
   </div>
 </template>
+
+<script>
+import newsList from '~/assets/news.json'
+
+export default {
+  data() {
+    return {
+      newsList
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '~/assets/variables.scss';
