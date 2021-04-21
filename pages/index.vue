@@ -100,6 +100,12 @@
               <th>所在地</th>
               <td>〒108-0071 東京都港区白金台5-11-8-205</td>
             </tr>
+            <tr>
+              <th>主要株主</th>
+              <td>
+                小川楓太、株式会社サイバーエージェント・キャピタル、古川健介、塚本大地
+              </td>
+            </tr>
           </tbody>
           <tfoot>
             <tr>
@@ -128,7 +134,7 @@
     <footer class="section">
       <div class="container">
         <p>
-          <small>Copyright © 2020 Black Inc. All rights reserved.</small>
+          <small>Copyright © 2021 Black Inc. All rights reserved.</small>
         </p>
       </div>
     </footer>
