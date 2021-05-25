@@ -47,11 +47,7 @@
         </h2>
         <div class="columns">
           <div class="column is-half-desktop is-offset-one-quarter-desktop">
-            <a
-              href="https://oo.parts/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://oo.parts/" target="_blank">
               <img
                 src="~/assets/ooparts.png"
                 alt="OOParts"
@@ -94,7 +90,11 @@
             </tr>
             <tr>
               <th>代表取締役</th>
-              <td>小川楓太</td>
+              <td>
+                <a href="https://twitter.com/ogawa0071" target="_blank"
+                  >小川楓太</a
+                >
+              </td>
             </tr>
             <tr>
               <th>所在地</th>
@@ -103,10 +103,17 @@
             <tr>
               <th>主要株主</th>
               <td>
-                小川楓太<br />
-                株式会社サイバーエージェント・キャピタル<br />
-                古川健介<br />
-                塚本大地<br />
+                <a href="https://twitter.com/ogawa0071" target="_blank"
+                  >小川楓太</a
+                ><br />
+                <a href="https://www.cyberagentcapital.com/" target="_blank"
+                  >株式会社サイバーエージェント・キャピタル</a
+                ><br />
+                <a href="https://twitter.com/kensuu" target="_blank">古川健介</a
+                ><br />
+                <a href="https://twitter.com/daichi_zizai" target="_blank"
+                  >塚本大地</a
+                ><br />
               </td>
             </tr>
           </tbody>
