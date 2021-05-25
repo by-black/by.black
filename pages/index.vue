@@ -23,7 +23,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="news in newsList" :key="news.url">
+            <tr v-for="news in newsList" :key="news.id">
               <th>{{ news.date }}</th>
               <td>
                 <a :href="news.url" target="_blank">{{ news.title }}</a>
@@ -91,7 +91,10 @@
             <tr>
               <th>代表取締役</th>
               <td>
-                <a href="https://twitter.com/ogawa0071" target="_blank"
+                <a
+                  href="https://twitter.com/ogawa0071"
+                  target="_blank"
+                  class="has-text-dark"
                   >小川楓太</a
                 >
               </td>
@@ -103,15 +106,28 @@
             <tr>
               <th>主要株主</th>
               <td>
-                <a href="https://twitter.com/ogawa0071" target="_blank"
+                <a
+                  href="https://twitter.com/ogawa0071"
+                  target="_blank"
+                  class="has-text-dark"
                   >小川楓太</a
                 ><br />
-                <a href="https://www.cyberagentcapital.com/" target="_blank"
+                <a
+                  href="https://www.cyberagentcapital.com/"
+                  target="_blank"
+                  class="has-text-dark"
                   >株式会社サイバーエージェント・キャピタル</a
                 ><br />
-                <a href="https://twitter.com/kensuu" target="_blank">古川健介</a
+                <a
+                  href="https://twitter.com/kensuu"
+                  target="_blank"
+                  class="has-text-dark"
+                  >古川健介</a
                 ><br />
-                <a href="https://twitter.com/daichi_zizai" target="_blank"
+                <a
+                  href="https://twitter.com/daichi_zizai"
+                  target="_blank"
+                  class="has-text-dark"
                   >塚本大地</a
                 ><br />
               </td>
